@@ -3,6 +3,7 @@ leetcode.com/problem-list/string/
 url: https://leetcode.com/problems/word-break/description
 """
 
+
 class Solution:
     def wordBreak(self, s, wordDict):
         dp = [True] + [False] * len(s)
@@ -13,5 +14,5 @@ class Solution:
                 if start >= 0 and dp[start] and s[start:i] == w:
                     dp[i] = True
                     break
-        
+
         return dp[-1]
