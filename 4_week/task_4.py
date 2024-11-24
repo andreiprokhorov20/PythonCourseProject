@@ -6,11 +6,8 @@ url: https://leetcode.com/problems/group-anagrams/description
 
 class Solution:
     def groupAnagrams(self, strs):
-        # ans = defaultdict(list)
-        ans = []
-
+        ans = defaultdict(list)
         for s in strs:
             key = "".join(sorted(s))
             ans[key].append(s)
-
         return ans.values()
