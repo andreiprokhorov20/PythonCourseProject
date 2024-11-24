@@ -1,0 +1,1 @@
+ctrl+S -> git add . -> pre-commit run --all-files -> ctrl+S -> git add . -> commit
